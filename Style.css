@@ -1,0 +1,71 @@
+@font-face {    /* dichiaro nuovo font importato */
+	font-family: 'Quicksand-Regular'; /* dichiaro nome del font da utilizzare in css */
+	src: local('Quicksand-Regular'), url('Quicksand-Regular.otf') format('opentype');  /* importo Font con file .otf */
+	}
+body {
+    background-color : black;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 0;
+    background-size: cover;
+    font-family: Quicksand-Regular;   /* richiamo il font importato per tutta la pagina */
+  }
+#box {    /* riquadro di sfondo, nero e semi-trasparente */
+    width: 1100px;
+    height: 910px;
+    padding-top: 50px;
+    padding-right: 115px;
+    padding-bottom: 20px;
+    padding-left: 115px;
+    margin: 0 auto;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.5);    /* trasparenza 0.5 non ereditaria al posto di opacity */
+    position: relative;
+    top: 23px;
+    border-radius: 20px;    /* arrotondamento angoli */
+    -moz-border-radius: 20px;  /* firefox */
+    -webkit-border-radius: 20px;   /* safari, chrome */
+  }
+#box1 {    /* Logo e slogan */
+    text-align: center;
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    color:#00DD00;
+  }
+ #menu {     /* barra menù */
+    text-align: center;
+    position: relative;
+    top: 30px;
+    padding: 12px;
+    background-color: #00DD00;
+  }
+#button{
+    font-size: 14px; 
+    border-radius: 3px;   /* arrotondamento angoli */
+    -moz-border-radius: 3px;    /* firefox */
+    -webkit-border-radius: 3px;   /* safari, chrome */
+    padding: 4px;
+  }
+#stat {   /* statistiche monopattino */
+    position: relative;
+    padding-top: 15px;
+    top: 40px;
+    color: white; 
+    line-height: 10px; /* internilea */
+  }
+#barra {    /* barra di stato della carica */
+    position: relative;
+    top: -8px;
+    height: 30px;
+    border-radius: 5px;
+  }
+.logo {
+    width: 280px;
+  }
+.logo-text{
+    margin:5;
+    font-size: 35px;
+    color:#00DD00;
+  }
